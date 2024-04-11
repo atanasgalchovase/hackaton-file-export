@@ -22,7 +22,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: ./hackaton-oauth/hackaton-avengers
+          context: ./hackaton-oauth/hackaton-avengers/hackaton-oauth.api
           file: ./Dockerfile
           tags: hackaton-oauth:latest
           outputs: type=docker,dest=/tmp/hackaton-oauth.tar
