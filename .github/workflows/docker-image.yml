@@ -18,7 +18,7 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Build Docker image
-        run: docker build -t hackaton-oauth -f hackaton-oauth/hackaton-avengers/Dockerfile ./hackaton-oauth/hackaton-avengers
+        run: docker build -t hackaton-oauth:latest -f hackaton-oauth/hackaton-avengers/Dockerfile ./hackaton-oauth/hackaton-avengers
 
       - name: Push Docker image
-        run: docker push docker.pkg.github.com/${{ github.repository }}/hackaton-oauth:${{ github.run_number }}
+        run: docker push docker.pkg.github.com/${{ github.repository }}/hackaton-oauth:latest
