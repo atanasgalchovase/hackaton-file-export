@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/bin/Debug
+/hackaton-oauth.api/obj
+/hackaton-oauth.api/bin/Debug/net8.0
+/hackaton-oauth.common/obj
+/hackaton-oauth.common/bin/Debug/net8.0
+/hackaton-oauth.data/obj
+/hackaton-oauth.data/bin/Debug/net8.0
+/hackaton-oauth.services/obj
+/hackaton-oauth.services/bin/Debug/net8.0
+/obj
+/.vs/hackaton-oauth/v16/.suo
+/.vs/hackaton-oauth/DesignTimeBuild
+/.vs/hackaton-oauth/FileContentIndex
+/.vs/hackaton-oauth/v17
+/.vs/hackaton-oauth/config/applicationhost.config
+/.vs

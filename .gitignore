@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/hackaton-file-export/hackaton-file-export/.vs
+/hackaton-file-export/hackaton-file-export/bin/Debug
+/hackaton-file-export/hackaton-file-export/obj
+/hackaton-file-export/hackaton-file-export/hackaton-file-export.api/bin/Debug/net8.0
+/hackaton-file-export/hackaton-file-export/hackaton-file-export.api/obj
+/hackaton-file-export/hackaton-file-export/hackaton-file-export.common/bin/Debug/net8.0
+/hackaton-file-export/hackaton-file-export/hackaton-file-export.common/obj
+/hackaton-file-export/hackaton-file-export/hackaton-file-export.data/bin/Debug/net8.0
+/hackaton-file-export/hackaton-file-export/hackaton-file-export.data/obj
+/hackaton-file-export/hackaton-file-export/hackaton-file-export.services/bin/Debug/net8.0
+/hackaton-file-export/hackaton-file-export/hackaton-file-export.services/obj

@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  hackaton-file-export.api:
+    image: ${DOCKER_REGISTRY-}hackatonfileexportapi
+    build:
+      context: .
+      dockerfile: hackaton-file-export.api/Dockerfile
+    networks: 
+      - hackaton-network-1
+
+  mongodb:
+    image: mongo:6-jammy
+    ports:
+      - '27017:27017'
+    volumes:
+      - dbdata6:/data/db
+    networks: 
+      - hackaton-network-1
+
+networks:
+    hackaton-network-1:
+     external: 
+      name: hackaton-network
+
+volumes:
+  dbdata6:
+    driver: local  

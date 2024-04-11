@@ -1,0 +1,6 @@
+@hackaton_file_export.api_HostAddress = http://localhost:5291
+
+GET {{hackaton_file_export.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  hackaton-oauth.api:
+    container_name: hackaton-oauth.api
+    hostname: hackaton-oauth.api
+    image: ${DOCKER_REGISTRY-}hackatonoauthapi
+    build:
+      context: .
+      dockerfile: hackaton-oauth.api/Dockerfile
+    networks: 
+      - proxynet
+
+  postgres:
+    container_name: postgres
+    hostname: postgres
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=oauth
+    networks: 
+      - proxynet
+ 
+networks:
+    proxynet:
+      name: hackaton-network
+
+volumes:
+  db:
+    driver: local
