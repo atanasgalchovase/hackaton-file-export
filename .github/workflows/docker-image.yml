@@ -21,4 +21,4 @@ jobs:
         run: docker build -t hackaton-oauth -f hackaton-oauth/hackaton-avengers/Dockerfile ./hackaton-oauth/hackaton-avengers
 
       - name: Push Docker image
-        run: docker push docker.pkg.github.com/${{ github.repository }}/IMAGE_NAME:${{ github.run_number }}
+        run: docker push docker.pkg.github.com/${{ github.repository }}/hackaton-oauth:${{ github.run_number }}
