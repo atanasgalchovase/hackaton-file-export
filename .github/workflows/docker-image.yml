@@ -17,4 +17,4 @@ jobs:
       with:
         path: hackaton-oauth/hackaton-avengers
     - name: Build the Docker image
-      run: docker build -t hackaton-oauth:$(date +%s) -f hackaton-oauth.api/Dockerfile .
+      run: docker build -t hackaton-oauth:$(date +%s) -f Dockerfile .
