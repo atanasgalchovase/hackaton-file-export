@@ -24,9 +24,3 @@ jobs:
           file: ./Dockerfile
           tags: hackaton-oauth:latest
           outputs: type=docker,dest=/tmp/hackaton-oauth.tar
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: hackaton-oauth
-          path: /tmp/hackaton-oauth.tar
